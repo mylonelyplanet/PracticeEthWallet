@@ -4,6 +4,7 @@ import com.ftvalue.blockchain.countdown.service.blockchain.BlockChainService;
 import com.ftvalue.blockchain.countdown.utils.AddressUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 public class TransactionService {
 
     @Autowired
+    @Qualifier("ethereumService")
     BlockChainService blockChainService;
 
     public String transferFrom(String from, String password, String to, String amount){

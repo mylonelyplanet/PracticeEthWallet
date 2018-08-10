@@ -32,7 +32,7 @@ public class WalletServiceTest {
     @Test
     public void newAddress(){
 
-        walletService.newAddress("test1","123456");
+        walletService.newAddress("tt","123456");
     }
 
     @Test

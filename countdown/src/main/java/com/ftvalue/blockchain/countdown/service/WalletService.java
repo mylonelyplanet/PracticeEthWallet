@@ -10,6 +10,7 @@ import com.ftvalue.blockchain.countdown.utils.AddressUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.bouncycastle.util.encoders.Hex;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.web3j.crypto.Credentials;
 
@@ -46,6 +47,7 @@ public class WalletService {
     Keystore keystore;
 
     @Autowired
+    @Qualifier("ethereumService")
     BlockChainService blockChainService;
 
 
