@@ -65,7 +65,7 @@ public class ERC20Contract extends Contract implements ERC20Token {
                     }));
             return executeRemoteCallSingleValueReturn(function, Boolean.class).send();
         } catch (Exception e) {
-            log.error("余额查询报错",e);
+            log.error("转账报错",e);
             return false;
         }
     }

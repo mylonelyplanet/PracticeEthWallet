@@ -20,7 +20,7 @@ public class ERC20ServiceTest {
     @Qualifier("ERC20Service")
     ERC20Service service;
 
-    String account = "3427764cb614f0fb95bb5fba54947eaf8e9f2757";
+    String account = "363ce6dbb927271249c3da04cc2b31d504ce1ef1";
     String password = "123456";
     String contractAddress = "0x55923d84ad63c1607cd6378d320ac7388c7c957d";
     BigInteger gasPrice = BigInteger.valueOf(20000000000l);
@@ -35,12 +35,13 @@ public class ERC20ServiceTest {
     public void getBalanceTest(){
         log.info("balance: "+service.getBalance("0x"+account));
     }
-/*
+
 
     @Test
     public void getBlockNumberTest(){
         log.info(""+service.getBlockNumber());
     }
-*/
+
+
 
 }

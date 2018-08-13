@@ -58,6 +58,6 @@ public class ERC20Service implements BlockChainService{
         if(contract == null){
             log.error("please init service");
         }
-        return contract != null;
+        return contract == null;
     }
 }
